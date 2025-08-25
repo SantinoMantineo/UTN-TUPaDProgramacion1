@@ -24,7 +24,7 @@ if (dd > 31 or dd < 0) and (mm > 12 or mm < 0):
     raise ValueError("Error: El dia tiene que ser menor a 31 y mayor a 0 y el mes debe ser menor a 12 y mayor a 0.")
 
 if dia == "lunes" or dia == "martes" or dia == "miercoles": 
-    examenInput = input("El dia ingresado se tomaron examenes?: (Afirmativo por si, Negativo por no) ")
+    examenInput = input("El dia ingresado se tomaron examenes: afirmativo o negativo ")
     examenInput = examenInput.lower()
     if examenInput == "afirmativo":
         aprobadosInput = int(input("ingrese la cantidad de alumnos aprobados: "))
